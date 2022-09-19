@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+   <meta charset="utf-8">
+   <title> 201924579 조나연 </title>
+</head>
+<!--
+<style>
+   table {
+     width: 100%;
+     border: 1px solid #444444;
+     border-collapse: collapse;
+   }
+   th, td {
+     border: 1px solid #444444;
+   }
+ </style>
+-->
+<body>
+   <form method="get">
+      <fieldset>
+         <legend>Photo Details</legend>
+         <table>
+            <tr>
+               <td colspan="2" >
+                  <div>
+                     <label>Title<br></label><input type="text" name="title" style="width: 500px;">
+                     <br><br>
+                     <label>Description<br></label><textarea cols="2" style="width: 450px;"></textarea>
+                  </div>
+               </td>
+            </tr>
+            <tr>
+               <td style="padding-top:1px">
+                  <div>
+                     <label>Continent</label><br>
+                        <select name="continent">
+                           <option>Choose continent</option>
+                           <option>Africa</option>
+                           <option>Asia</option>
+                           <option>Europe</option>
+                           <option>North America</option>
+                           <option>South America</option>
+                        </select>
+                     <br><br>
+                     <label>Country</label><br>
+                        <select name="country">
+                           <option>Choose country</option>
+                           <option>Canada</option>
+                           <option>Mexico</option>
+                           <option>United States</option>
+                     <br><br>
+                     <label>City</label><br>
+                     <input type="text" name="city_text" list="cities">
+                     <datalist id="cities">
+                        <option>Calgary</option>
+                        <option>Montreal</option>
+                        <option>Toronto</option>
+                        <option>Vancouver</option>
+                     </datalist>
+                  </div>
+               </td>
+               <td>
+                  <div>
+                     <label>Copyright?</label><br>
+                     <input type="radio" name="copyright">All rights reserved<br>
+                     <input type="radio" name="copyright" checked>Creative Commons<br>
+                     <br><br>
+                     <label>Creative Commons Types</label><br>
+                     <input type="checkbox" name="creative_type">Attribution<br>
+                     <input type="checkbox" name="creative_type">Noncommercial<br>
+                     <input type="checkbox" name="creative_type">No Derivative Works<br>
+                     <input type="checkbox" name="creative_type">Share Alike<br>
+                  </div>
+               </td>
+            </tr>
+            <tr>
+               <td colspan="2">
+                  <div>
+                     <label>I accept the software license</label>
+                     <input type="checkbox" name="accept">
+                  </div>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <div>
+                     <label>Rate this photo:</label><br>
+                     <input type="number" min="1" max="5" name="rate">
+                     <br><br>
+                     <label>Color Collection:</label><br>
+                     <input type="color" name="color_collection">
+                  </div>
+               </td>
+               <td>
+                  <div>
+                     <label>Date Taken:</label><br>
+                     <input type="date" name="date">
+                     <br><br>
+                     <label>Time Taken:</label><br>
+                     <input type="time" name="time">
+                  </div>
+               </td>
+            </tr>
+         </table>
+         <br>
+         <input type="submit" value="Submit" name="submit">
+         <input type="reset" value="Clear Form" name="reset">
+      </fieldset>
+   </form>
+</body>
+</html>
